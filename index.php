@@ -13,6 +13,6 @@
             <div id="url"><input id="urlvalue" type="text" placeholder="輸入網址" onkeyup="urlverify();"><li class="icon icon-error"></div>
             <div id="submit" onclick="make();">產生短網址</div>
         </div>
-        <div id="footer">Open Source : <a target="blank" href="https://goo.gl/KjyTa1">https://github.com/partment/PartMent-ShortLink-Generator</a> Dev 0.0.1</div>
+        <div id="footer">Open Source : <a target="blank" href="https://goo.gl/KjyTa1">https://github.com/partment/PartMent-ShortLink-Generator</a> Dev 0.0.2</div>
     </body>
 </html>
