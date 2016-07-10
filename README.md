@@ -1,4 +1,4 @@
-# PartMent-ShortLink-Generator
+# PartMent ShortLink Generator
 <p>這個是由PartMent製作的短網址系統</p>
 <p>This is a shortlink generate system.</p>
 #系統狀態 (System Status)
