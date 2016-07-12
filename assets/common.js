@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    history.replaceState(null,null,"/");
     $("#urlvalue").keyup(function (e) { //Enter偵測
         if(e.which == 13) {
             make();
@@ -70,6 +71,7 @@ function make() {
         },
         error: function () {
             console.log("Server Error");
+            $("#urlvalue").val("");
             alert("伺服器錯誤，請稍後再試");
         },
         complete: function () {
