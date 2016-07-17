@@ -15,6 +15,10 @@ function make_random($length = 4) { //產生4位亂碼函數
 if(preg_match($regUrl, $url)){ //比對網址
     $http = substr($url, 0, 7); //取得網址Protocol
     $https = substr($url, 0, 8); //取得網址Protocol
+    $endpoint = substr($url, -1); //取得網址最後一個字
+    if($endpoint == ".") { //判斷最後一個字是否為 "."
+        $url = substr_replace($url, "", -1, 1); //去除.
+    }
     if($http == "http://") { //判斷網址Protocol
         $url = substr_replace($url, "", 0, 7); //去除protocol
         $protocol = 0; //設定protocol參數
