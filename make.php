@@ -16,8 +16,9 @@ if(preg_match($regUrl, $url)){ //比對網址
     $http = substr($url, 0, 7); //取得網址Protocol
     $https = substr($url, 0, 8); //取得網址Protocol
     $endpoint = substr($url, -1); //取得網址最後一個字
-    if($endpoint == ".") { //判斷最後一個字是否為 "."
-        $url = substr_replace($url, "", -1, 1); //去除.
+    while($endpoint == "." || $endpoint == "/") { //判斷網址最後一個字是否為 "."或"/"
+        $url = substr_replace($url, "", -1, 1); //去除"."或"/"
+        $endpoint = substr($url, -1); //取得網址最後一個字
     }
     if($http == "http://") { //判斷網址Protocol
         $url = substr_replace($url, "", 0, 7); //去除protocol

@@ -66,7 +66,7 @@ function make() {
                 alert("不可以重複縮短網址!")
             } else {
                 console.log("Server Responses Shortlink");
-                $("#urlvalue").val("http://ptmt.ml/"+shortlink);
+                $("#urlvalue").val("https://ptmt.ml/"+shortlink);
             }
         },
         error: function () {
