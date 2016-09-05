@@ -3,7 +3,7 @@ $shortlink = $_SERVER['REQUEST_URI'];
 $shortlink = substr_replace($shortlink, "", 0, 1);
 if(@strlen($shortlink) == 4) {
     include("connect.php"); //連接資料庫
-    $urlexist = "select * from url where shortlink = '$shortlink' limit 1";
+    $urlexist = "select * from url where binary shortlink = '$shortlink' limit 1";
     $result = mysqli_query($sql, $urlexist); //找出該網址
     $row = mysqli_fetch_row($result); //將該網址資料轉成Array陣列
     if($row[2] == "1") {
@@ -37,6 +37,6 @@ if(@strlen($shortlink) == 4) {
             <div id="url"><input id="urlvalue" type="text" placeholder="輸入網址" onkeyup="urlverify();" autofocus><li class="icon icon-error"></div>
             <div id="submit" onclick="make();">產生短網址</div>
         </div>
-        <div id="footer">Open Source : <a target="blank" href="http://ptmt.ml/mY0i">GitHub</a> Alpha 1.0.2</div>
+        <div id="footer">Open Source : <a target="blank" href="http://ptmt.ml/mY0i">GitHub</a> Alpha 1.0.3</div>
     </body>
 </html>
