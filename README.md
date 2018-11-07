@@ -1,6 +1,6 @@
 # PartMent ShortLink Generator
 <p>這個是由PartMent製作的短網址系統</p>
-<p>This is a shortlink generate system.</p>
+<p>This is a shortlink generating system.</p>
 #系統狀態 (System Status)
 <p>Alpha 測試中...</p>
 <p>In Alpha Testing...</p>
