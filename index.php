@@ -24,12 +24,14 @@ if(@strlen($shortlink) == 4) {
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
     <head>
         <title>PartMent 短網址 - 開源、無廣告的短網址產生器</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="keywords" content="PartMent 短網址">
         <meta name="description" content="PartMent短網址是一個開源且沒有廣告的短網址產生器">
+        <link rel="canonical" href="https://ptmt.ml/">
         <link href="./assets/common.css" rel="stylesheet">
         <script src="./assets/jquery-3.0.0.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
         <script src="./assets/jquery-ui.min.js" integrity="sha384-YWP9O4NjmcGo4oEJFXvvYSEzuHIvey+LbXkBNJ1Kd0yfugEZN9NCQNpRYBVC1RvA" crossorigin="anonymous"></script>
