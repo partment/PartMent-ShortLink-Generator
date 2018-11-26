@@ -43,6 +43,6 @@ if(@strlen($shortlink) == 4) {
             <div id="url"><input id="urlvalue" type="text" placeholder="輸入網址" onkeyup="urlverify();" autofocus><li class="icon icon-error"></div>
             <div id="submit" onclick="make();">產生短網址</div>
         </div>
-        <div id="footer">Open Source : <a target="blank" href="https://ptmt.ml/Q6R5">GitHub</a> | <a target="blank" href="https://status.ptmt.ml/">Status</a> | Alpha 1.0.3</div>
+        <div id="footer">Open Source : <a target="blank" href="https://ptmt.ml/Q6R5">GitHub</a> | <a target="blank" href="https://status.ptmt.ml/">Status</a> | 1.0.0</div>
     </body>
 </html>
